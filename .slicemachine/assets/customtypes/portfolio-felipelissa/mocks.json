@@ -1,0 +1,23 @@
+{
+  "id": "c4b168f1-6823-48e3-812b-8f001569ded1",
+  "uid": "provident-quae-incidunt",
+  "type": "portfolio-felipelissa",
+  "data": {
+    "title": "aggregate frictionless e-tailers",
+    "description": "strategize front-end solutions",
+    "type": "engage rich eyeballs",
+    "link": {
+      "link_type": "Web",
+      "url": "https://slicemachine.dev"
+    },
+    "thumbnail": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1589321599763-d66926c29613?w=900&h=500&fit=crop"
+    }
+  }
+}
