@@ -13,7 +13,7 @@ export function Projetos() {
       <section>
           <ProjetoItem
           img='https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg'
-          title="Projeto01"
+          title="Projeto BasicFlix"
           type='Website'
           slug='projeto-01'></ProjetoItem>
           <ProjetoItem

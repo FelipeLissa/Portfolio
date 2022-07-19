@@ -34,14 +34,13 @@ export default function Projeto ({title,slug,type,description,link,thumbnail}: P
       <meta property="og:description"  content="Sou um desenvolvedor Front-end e aqui apresento alguns projetos desenvolvidos por mim!" />
     </Head>
           <Header></Header>
-          <BannerProjeto title="projeto X" type="website" imgUrl="https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg" children={[]}></BannerProjeto>
+          <BannerProjeto title="BasicFlix" type="website" imgUrl="https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg" children={[]}></BannerProjeto>
           <main>
             <p>
-              Lorem ipaaaaa s culpa omnis illum modi? Repellat maxime,
-              culpa mollitia soluta asperiores nobis possimus temporibus!
+              Website sobre filmes em lançamento, com detalhes sobre o filme gerado por uma API externa.
             </p>
-            <button type="button">
-              <a href="#">ver projeto online</a>
+            <button type="button" >
+              <a target="_blank" href="https://basicflix-felipelissa.vercel.app/">ver projeto Online </a>
             </button>
           </main>
         </ProjetoContainer></>

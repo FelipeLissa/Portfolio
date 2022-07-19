@@ -6,24 +6,25 @@ export function HomeHero() {
   return (
     <Container data-aos="fade-up-right">
      <img src={picture} alt='foto de perfil' />
+
+
      <div>
-      
       <TextContainer>
         <h1>Olá</h1>
-        <h2>Me chamo Felipe</h2>
+        <h2>Bem vindo ao meu Portfólio</h2>
       </TextContainer>
 
       <InfosContainer>
           <CodeItem>
             <span className='purple'>Sobre Mim</span> {'\u007B'}
             <div>
-              Nome: <span className='blue'>Felipe</span>
+              Nome: <span className='blue'>Felipe Lissa</span>
             </div>
             <div>
-              Sobrenome: <span className='blue'>Lissa</span>
+              idade: <span className='blue'>24 anos</span>
             </div>
             <div>
-              Cidade: <span className='blue'>Florianópolis</span>
+              Residência: <span className='blue'>Florianópolis/SC</span>
             </div>
             {'\u007D'}
           </CodeItem>
@@ -31,10 +32,13 @@ export function HomeHero() {
           <CodeItem>
             <span className='purple'>Profissão</span> {'\u007B'}
             <div>
-              Área: <span className='blue'>Front-end e Web-Designer</span>
+              Área: <span className='blue'>Front-end & Web-Designer</span>
             </div>
             <div>
-              Empresa: <span className='blue'>**</span>
+              Formação: <span className='blue'>Faculdade CESUSC</span>
+            </div>
+            <div>
+              Carreira: <span className='blue'>Freelancer</span>
             </div>
             {'\u007D'}
           </CodeItem>
