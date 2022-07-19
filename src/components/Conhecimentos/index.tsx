@@ -2,7 +2,6 @@ import { Container } from './styles';
 import SectionTitle from '../SectionTitle'
 import { AiFillHtml5 } from 'react-icons/ai';
 import { SiAdobephotoshop, SiAdobexd, SiAdobepremierepro, SiJavascript, SiNextdotjs, SiStyledcomponents } from 'react-icons/si';
-import { IoLogoJavascript } from 'react-icons/Io';
 import { TbBrandNextjs } from 'react-icons/Tb';
 import {FaCss3Alt, FaReact} from 'react-icons/Fa';
 import ConhecimentoItem from './ConhecimentoItem';
