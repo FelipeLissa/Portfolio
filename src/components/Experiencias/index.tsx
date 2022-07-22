@@ -33,8 +33,8 @@ export function Experiencias() {
         
         <ExperienciaItem 
         year='2021-Hoje'
-        title='Dev Full-Stack Jr'
-        description='Desenvolvedor Full-Stack Jr autônomo focado em desenvolvimento com Next.js.'>
+        title='Dev Front-End Jr'
+        description='Desenvolvedor Front-End Jr autônomo focado em desenvolvimento com Next.js.'>
         </ExperienciaItem>
       </section>
     

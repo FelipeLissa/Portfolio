@@ -1,48 +1,98 @@
-import { GetStaticProps, GetStaticPaths } from "next";
-import { BannerProjeto } from "../../../components/BannerProjeto";
-import { Header } from "../../../components/Header";
-import { ProjetoContainer } from "../../../styles/ProjetoStylesSlugs";
-import Head from "next/head";
+import { GetStaticPaths, GetStaticProps } from 'next';
+import Prismic from '@prismicio/client';
+import { useRouter } from 'next/router';
+import Head from 'next/head';
+import {BannerProjeto} from '../../../components/BannerProjeto';
+import {Header} from '../../../components/Header';
+import { getPrismicClient } from '../../../services/prismic';
+import { ProjetosContainer } from '../../../styles/ProjetoStyles';
+import LoadingScreen from '../../../components/LoadingScreen';
 
-
-
-interface ProjetoProps {
+interface IProjeto {
   slug: string;
   title: string;
-  type:string;
+  type: string;
   description: string;
   link: string;
   thumbnail: string;
 }
 
-
-export default function Projeto ({title,slug,type,description,link,thumbnail}: ProjetoProps) {
-    return (
-
-      <>         
-      <ProjetoContainer>
-      <Head>
-      <title> {title} | Felipe Lissa </title>
-
-      <meta
-        name="description"
-        content="Desenvolvedor Front-End especializado em React Next" />
-      <meta property="og:image" content="/ogimage.png" />
-      <meta property="og:image:secure_url" content="/ogimage.png" />
-      <meta name="twitter:image" content="/ogimage.png" />
-      <meta name="twitter:image:src" content="/ogimage.png" />
-      <meta property="og:description"  content="Sou um desenvolvedor Front-end e aqui apresento alguns projetos desenvolvidos por mim!" />
-    </Head>
-          <Header></Header>
-          <BannerProjeto title="BasicFlix" type="website" imgUrl="https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg" children={[]}></BannerProjeto>
-          <main>
-            <p>
-              Website sobre filmes em lançamento, com detalhes sobre o filme gerado por uma API externa.
-            </p>
-            <button type="button" >
-              <a target="_blank" href="https://basicflix-felipelissa.vercel.app/">ver projeto Online </a>
-            </button>
-          </main>
-        </ProjetoContainer></>
-    )
+interface ProjetoProps {
+  projeto: IProjeto;
 }
+
+export default function Projeto({ projeto }: ProjetoProps) {
+  const router = useRouter();
+  if (router.isFallback) {
+    return <LoadingScreen />;
+  }
+
+  return (
+    <ProjetosContainer>
+      <Head>
+        <title>{projeto.title} | Meu portfólio</title>
+        <meta name="description" content={projeto.description} />
+        <meta property="og:image" content={projeto.thumbnail} />
+        <meta property="og:image:secure_url" content={projeto.thumbnail} />
+        <meta name="twitter:image" content={projeto.thumbnail} />
+        <meta name="twitter:image:src" content={projeto.thumbnail} />
+        <meta property="og:description" content={projeto.description} />
+      </Head>
+
+      <Header />
+      <BannerProjeto
+        title={projeto.title}
+        type={projeto.type}
+        imgUrl={projeto.thumbnail} 
+        children={[]}/>
+
+      <main>
+        <p>{projeto.description}</p>
+        <button type="button">
+          <a href={projeto.link}>Ver projeto online</a>
+        </button>
+      </main>
+    </ProjetosContainer>
+  );
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const prismic = getPrismicClient();
+  const projetos = await prismic.query([
+    Prismic.predicates.at('document.type', 'pro')
+  ]);
+
+  const paths = projetos.results.map(projeto => ({
+    params: {
+      slug: projeto.uid
+    }
+  }));
+
+  return {
+    paths,
+    fallback: true
+  };
+};
+
+export const getStaticProps: GetStaticProps = async context => {
+  const prismic = getPrismicClient();
+  const { slug } = context.params;
+
+  const response = await prismic.getByUID('pro', String(slug), {});
+
+  const projeto = {
+    slug: response.uid,
+    title: response.data.title,
+    type: response.data.type,
+    description: response.data.description,
+    link: response.data.link.url,
+    thumbnail: response.data.thumbnail.url
+  };
+
+  return {
+    props: {
+      projeto
+    },
+    revalidate: 86400
+  };
+};

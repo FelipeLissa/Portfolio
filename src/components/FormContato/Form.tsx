@@ -8,7 +8,6 @@ export default function Form() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [mensagem, setMensagem] = useState('');
-
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(event: FormEvent) {
