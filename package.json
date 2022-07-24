@@ -12,6 +12,7 @@
     "@babel/helper-wrap-function": "^7.18.9",
     "aos": "^2.3.4",
     "axios": "^0.27.2",
+    "config": "^3.3.7",
     "next": "10.2.0",
     "next-images": "^1.7.0",
     "nodemailer": "^6.7.7",
