@@ -8,7 +8,7 @@ export default function sendEmail(req, res) {
         port:'587',
         auth: {
             user: config.USERMAIL,
-            pass:process.env.PASSMAIL
+            pass:config.PASSMAIL
         },
         tls: {
             ciphers:'SSLv3'
