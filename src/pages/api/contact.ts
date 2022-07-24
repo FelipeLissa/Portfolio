@@ -1,6 +1,6 @@
 
 const nodemailer = require("nodemailer")
-const config = require('../../../config.local')
+import config from '../../../config.local';
 export default function sendEmail(req, res) {
     let transporter = nodemailer.createTransport ({
         host:'smtp-mail.outlook.com',
