@@ -4,14 +4,14 @@ import styled from 'styled-components';
 export const Container = styled.section``;
 
 export const FormContainer = styled.form`
-  margin-top: 8rem;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 0.7rem;
 
 
     button {
+    margin:0rem 6rem 0rem 6rem;
     border: none;
     padding: 1rem 2.5rem;
     color: white;
@@ -20,7 +20,6 @@ export const FormContainer = styled.form`
     border-radius: 0.5rem;
     background: linear-gradient(225deg, ${({theme}) => theme.primary} 30%, #6610f299 100%);
     transition: 0.5s;
-    width: 100%;
 
     &:disabled {
       opacity: 0.5;
@@ -41,8 +40,8 @@ export const FormContainer = styled.form`
 `;
 
 export const Input = styled.input`
-  height: 3rem;
-  width: 100%;
+  height: 3rem;  
+  margin:0rem 6rem 0rem 6rem;
   background: ${({ theme }) => theme.inputBackground};
   border: 1px solid ${({ theme }) => theme.border};
   padding: 1.7rem 1.5rem;
@@ -67,7 +66,7 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
   height: 10rem;
-  width: 100%;
+  margin:0rem 6rem 0rem 6rem;
   background: ${({ theme }) => theme.inputBackground};
   border: 1px solid ${({ theme }) => theme.border};
   padding: 1.7rem 1.5rem;

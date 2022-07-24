@@ -1,40 +1,24 @@
-import nodemailer from 'nodemailer';
-import SENDGRIDTransport from 'nodemailer-sendgrid-transport';
-import { NextApiRequest, NextApiResponse } from 'next';
 
-const email = process.env.MAILADRESS;
-
-const transporter = nodemailer.createTransport(
-  SENDGRIDTransport({
-    auth: {
-      api_key: process.env.SENDGRID_API_KEY
-    }
-  })
-);
-
-export default async (req: NextApiRequest, res: NextApiResponse) => {
-  try {
-    const { senderMail, name, content } = req.body;
-
-    if (!senderMail.trim() || !name.trim() || !content.trim()) {
-      return res.status(403).send('');
-    }
-
-    const message = {
-      from: email,
-      to: email,
-      subject: `Nova mensagem de contato - ${name}`,
-      html: `<p><b>Email:</b> ${senderMail}<br /><b>Mensagem:</b> ${content}</p>`,
-      replyTo: senderMail
-    };
-
-    transporter.sendMail(message);
-
-    return res.send('');
-  } catch (err) {
-    return res.json({
-      error: true,
-      message: err.message
-    });
-  }
-};
+const nodemailer = require("nodemailer")
+const config = require('../../../config.local')
+export default function sendEmail(req, res) {
+    let transporter = nodemailer.createTransport ({
+        host:'smtp-mail.outlook.com',
+        secureConnection: false,
+        port:'587',
+        auth: {
+            user: config.USERMAIL,
+            pass:process.env.PASSMAIL
+        },
+        tls: {
+            ciphers:'SSLv3'
+        }
+    })
+    transporter.sendMail({
+        from: config.USERMAIL, 
+        to: config.USERMAIL,
+        subject: "Contato feito pelo Portfólio ✔",
+        text: req.body.name+req.body.email+req.body.message,
+        html:`<h1>${req.body.name}<h1/> <br/><h2> ${req.body.email}<h2/> <br/> <h2>${req.body.message}<h2/>`
+      }).then((response) => { res.send(response)});
+}

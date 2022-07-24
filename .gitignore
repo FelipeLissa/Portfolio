@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+#CONFIG LOCAL
+/config.local.js

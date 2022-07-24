@@ -9,7 +9,7 @@ interface ProjetoItemProps {
   slug: string;
 }
 
-export function ProjetoItem({ title, type, imgUrl, slug }: ProjetoItemProps) {
+export function ExpositorProjetos({ title, type, imgUrl, slug }: ProjetoItemProps) {
   return (
     <Container imgUrl={imgUrl}>
       <Link href={`/projetos/${slug}`}>
@@ -25,4 +25,4 @@ export function ProjetoItem({ title, type, imgUrl, slug }: ProjetoItemProps) {
   );
 }
 
-export default ProjetoItem;
+export default ExpositorProjetos;

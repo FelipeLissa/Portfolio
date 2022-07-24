@@ -2,8 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
     width: 100%;
-    border-top: 3px solid ${({theme}) => theme.primary};
-    margin-top: 5rem;
     
     >section {
         margin-top: 8rem;

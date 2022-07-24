@@ -1,6 +1,5 @@
 import { FormEvent, useState } from 'react';
 import toast from 'react-hot-toast'
-import { sendContactMail } from '../../services/sendMail';
 import theme from '../../styles/theme';
 import { FormContainer, Input, TextArea } from './styles';
 
@@ -12,6 +11,10 @@ export default function Form() {
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
+
+
+
+
 
     if (loading) return;
 
@@ -27,14 +30,24 @@ export default function Form() {
 
     try {
       setLoading(true);
-      await sendContactMail(nome, email, mensagem);
       setNome('');
       setEmail('');
       setMensagem('');
-
+      fetch('/api/contact', {
+        method:'POST',
+        headers: {
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify({
+          name: nome,
+          email: email,
+          message: mensagem
+        })
+        
+      })
       toast('Mensagem enviada com sucesso!', {
         style: {
-          background: theme.secondary,
+          background: theme.success,
           color: '#fff'
         }
       });
@@ -68,7 +81,7 @@ export default function Form() {
         value={mensagem}
         onChange={({ target }) => setMensagem(target.value)}
       />
-      <button type="submit" disabled={loading}>
+      <button  type="submit" disabled={loading}>
         ENVIAR
       </button>
     </FormContainer>

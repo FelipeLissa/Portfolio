@@ -1,15 +1,16 @@
 import { ReactNode } from 'react';
-import SectionTitle from '../SectionTitle';
+import SectionContato from '../SectionContato';
 import Form from './Form';
 import { Container } from './styles';
 
 export function FormContato() {
   return (
     <Container data-aos="fade-down" data-aos-easing="linear">
-      <SectionTitle 
+
+      <SectionContato 
       title={<>Precisa dos  <br/> Meus serviços?</>}
       description={<>Preencha o formulário abaixo que <br/> irei retornar em breve</>}>
-      </SectionTitle>
+      </SectionContato>
 
       <Form></Form>
     </Container>

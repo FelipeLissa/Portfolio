@@ -1,14 +1,14 @@
 import { ReactNode } from 'react';
 import { Container } from './styles';
 
-interface BannerProjetoProps {
+interface ProjetoDetalhadoProps {
   children:[];
   title:string;
   type: string;
   imgUrl:string;
 }
 
-export function BannerProjeto({ title, type,imgUrl }: BannerProjetoProps) {
+export function ProjetoDetalhado({ title, type,imgUrl }: ProjetoDetalhadoProps) {
   return (
     <Container imgUrl={imgUrl}>
       <div className='overlay'>

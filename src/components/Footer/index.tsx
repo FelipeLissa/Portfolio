@@ -22,9 +22,9 @@ export function Footer() {
       <div className='container'>
       <button onClick={handleScrollTop} type='button'>Voltar ao Topo</button>
       <section>
-        <AiOutlineInstagram onClick={() => handleRedirect("https://instagram.com")}></AiOutlineInstagram>
-        <AiOutlineGithub onClick={() => handleRedirect("https://github.com")}></AiOutlineGithub>
-        <AiOutlineLinkedin onClick={() => handleRedirect("https://linkedin.com")}></AiOutlineLinkedin>
+        <AiOutlineInstagram onClick={() => handleRedirect("https://www.instagram.com/felipelissa/?hl=pt-br")}></AiOutlineInstagram>
+        <AiOutlineGithub onClick={() => handleRedirect("https://github.com/FelipeLissa")}></AiOutlineGithub>
+        <AiOutlineLinkedin onClick={() => handleRedirect("linkedin.com/in/felipe-lissa-660b59193")}></AiOutlineLinkedin>
       </section>
 
       </div>

@@ -10,16 +10,11 @@
   },
   "dependencies": {
     "@babel/helper-wrap-function": "^7.18.9",
-    "@prismicio/client": "5.1.0",
-    "@prismicio/helpers": "^2.3.2",
-    "@prismicio/react": "^2.4.3",
-    "@prismicio/slice-simulator-react": "^0.2.2",
     "aos": "^2.3.4",
     "axios": "^0.27.2",
     "next": "10.2.0",
     "next-images": "^1.7.0",
     "nodemailer": "^6.7.7",
-    "nodemailer-sendgrid-transport": "^0.2.0",
     "polished": "^4.2.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -48,7 +43,6 @@
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.3.0",
-    "slice-machine-ui": "^0.4.1",
     "typescript": "^4.2.4"
   },
   "config": {

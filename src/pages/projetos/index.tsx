@@ -1,13 +1,13 @@
 import Head from "next/head"
 import { Header } from "../../components/Header"
-import { ProjetoItem } from "../../components/ProjetoItem"
+import { ExpositorProjetos } from "../../components/ProjetoItem"
 import { ProjetosContainer } from "../../styles/ProjetoStyles"
 
 
 export default function Projetos () {
     return (
         <><Head>
-            <title> Projetos | Felipe Lissa </title>
+            <title> Contato | Felipe Lissa </title>
 
             <meta
                 name="description"
@@ -22,35 +22,38 @@ export default function Projetos () {
         </Head><ProjetosContainer>
                 <Header></Header>
                 <main className="container">
-                    <ProjetoItem
+                    <ExpositorProjetos
                         title="Projeto01"
                         type="Website"
                         slug="projeto-01"
-                        imgUrl="https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
+                        imgUrl="/projetobasicfliximg.png"
                     >
-                    </ProjetoItem>
-                    <ProjetoItem
+                    </ExpositorProjetos>
+                    <ExpositorProjetos
                         title="Projeto02"
                         type="Website"
                         slug="projeto-02"
-                        imgUrl="https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
+                        imgUrl="projetoimg.png"
                     >
-                    </ProjetoItem>
-                    <ProjetoItem
+                    </ExpositorProjetos>
+                    <ExpositorProjetos
                         title="Projeto03"
                         type="Website"
                         slug="projeto-03"
-                        imgUrl="https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
+                        imgUrl="projetoimg.png"
                     >
-                    </ProjetoItem>
-                    <ProjetoItem
+                    </ExpositorProjetos>
+                    <ExpositorProjetos
                         title="Projeto04"
                         type="Website"
                         slug="projeto-04"
-                        imgUrl="https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg"
+                        imgUrl="projetoimg.png"
                     >
-                    </ProjetoItem>
+                    </ExpositorProjetos>
                 </main>
-            </ProjetosContainer></>
+            </ProjetosContainer>
+            
+            </>
+           
     )
 }

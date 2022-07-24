@@ -2,14 +2,14 @@ import Link from 'next/link';
 import { AiOutlineRightCircle } from 'react-icons/ai';
 import { ProjetoContainer } from './styles';
 
-interface ProjetoProps {
+interface ProjetosHomeProps {
   title: string;
   type: string;
   slug: string;
   img: string;
 }
 
-export default function ProjetoItem({ title, type, slug, img }: ProjetoProps) {
+export default function ProjetosHome({ title, type, slug, img }: ProjetosHomeProps) {
   return (
     <ProjetoContainer imgUrl={img} data-aos="fade-up">
       <section>
