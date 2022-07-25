@@ -14,7 +14,7 @@ export function Projetos() {
           img='/projetobasicfliximg.png'
           title="Projeto BasicFlix"
           type='Website'
-          slug='projeto-01'></ProjetosHome>
+          slug='#'></ProjetosHome>
           
           <ProjetosHome
           img="/projetoimg.png"
@@ -29,7 +29,7 @@ export function Projetos() {
           slug='projeto-03'></ProjetosHome>
       </section>
       <button type='button'>
-        <Link href="/projetos">
+        <Link href="#">
           <a>
             Ver Todos os Projetos
           </a>

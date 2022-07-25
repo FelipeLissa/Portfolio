@@ -20,7 +20,7 @@ export default function ProjetosHome({ title, type, slug, img }: ProjetosHomePro
         </div>
       </section>
       <button type="button">
-        <Link href={`/projetos/${slug}`}>
+        <Link href="#">
           <a>
             Ver mais <AiOutlineRightCircle />
           </a>
