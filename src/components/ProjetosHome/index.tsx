@@ -13,20 +13,20 @@ export function Projetos() {
           <ProjetosHome
           img='/projetobasicfliximg.png'
           title="Projeto BasicFlix"
-          type='Website'
+          type='Api Externa'
           slug='https://basicflix.vercel.app/'></ProjetosHome>
           
           <ProjetosHome
           img="/projetoautenticadorimg.png"
           title='Projeto Autenticador'
-          type='Website'
+          type='Autenticador'
           slug='https://autenticadornext-felipelissa.vercel.app/'></ProjetosHome>
           
           <ProjetosHome
           img='/projetoimg.png'
-          title='Projeto03'
-          type='Website'
-          slug='projeto-03'></ProjetosHome>
+          title='Em Breve'
+          type='Em Breve'
+          slug='#'></ProjetosHome>
       </section>
     </Container>
   );
