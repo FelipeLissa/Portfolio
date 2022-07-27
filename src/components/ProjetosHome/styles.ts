@@ -20,28 +20,7 @@ export const Container = styled.section`
       gap: 2rem;
     }
   }
-  > button {
-    background: linear-gradient(225deg, ${({theme}) => theme.primary} 30%, #6610f299 100%);
-    padding: 0.8rem 3rem;
-    border-radius: 0.5rem;
-    border: none;
-    transition: 0.5s;
-    &:hover {
-      background: ${({ theme }) => darken(0.05, theme.primary)};
-    }
-    a {
-      text-transform: uppercase;
-      color: #fff;
-      font-size: 1.5rem;
-      font-weight: 300;
-    }
-    @media (max-width: 500px) {
-      padding: 1rem;
-      a {
-        font-size: 1rem;
-      }
-    }
-  }
+  
 `;
 
 export const ProjetoContainer = styled.div<ProjetoProps>`

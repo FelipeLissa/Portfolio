@@ -44,7 +44,6 @@ export default function Home() {
       <Experiencias></Experiencias>
       <Conhecimentos></Conhecimentos>
       <Projetos></Projetos>
-      <FormContato></FormContato>
     </main>
 
     <Footer></Footer>

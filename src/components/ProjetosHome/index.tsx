@@ -28,13 +28,6 @@ export function Projetos() {
           type='Website'
           slug='projeto-03'></ProjetosHome>
       </section>
-      <button type='button'>
-        <Link href="#">
-          <a>
-            Ver Todos os Projetos
-          </a>
-        </Link>
-      </button>
     </Container>
   );
 }
