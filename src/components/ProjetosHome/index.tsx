@@ -14,13 +14,13 @@ export function Projetos() {
           img='/projetobasicfliximg.png'
           title="Projeto BasicFlix"
           type='Website'
-          slug='#'></ProjetosHome>
+          slug='https://basicflix.vercel.app/'></ProjetosHome>
           
           <ProjetosHome
-          img="/projetoimg.png"
-          title='Projeto02'
+          img="/projetoautenticadorimg.png"
+          title='Projeto Autenticador'
           type='Website'
-          slug='projeto-02'></ProjetosHome>
+          slug='https://autenticadornext-felipelissa.vercel.app/'></ProjetosHome>
           
           <ProjetosHome
           img='/projetoimg.png'

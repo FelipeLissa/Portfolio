@@ -20,11 +20,11 @@ export default function ProjetosHome({ title, type, slug, img }: ProjetosHomePro
         </div>
       </section>
       <button type="button">
-        <Link href="#">
-          <a>
+        <div>
+          <a target='blank' href={slug}>
             Ver mais <AiOutlineRightCircle />
           </a>
-        </Link>
+        </div>
       </button>
     </ProjetoContainer>
   );
