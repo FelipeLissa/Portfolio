@@ -20,7 +20,7 @@ export function Projetos() {
           img="/projetoautenticadorimg.png"
           title='Projeto Autenticador'
           type='Autenticador'
-          slug='https://autenticadornext-felipelissa.vercel.app/'></ProjetosHome>
+          slug='https://autenticador-next-auth0.vercel.app'></ProjetosHome>
           
           <ProjetosHome
           img='/projetoimg.png'
