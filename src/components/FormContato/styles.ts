@@ -1,7 +1,8 @@
 import { darken} from 'polished';
 import styled from 'styled-components';
 
-export const Container = styled.section``;
+export const Container = styled.section`
+`;
 
 export const FormContainer = styled.form`
   width: 100%;

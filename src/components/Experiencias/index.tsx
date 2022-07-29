@@ -12,22 +12,22 @@ export function Experiencias() {
       <section>
         <ExperienciaItem 
         year='2019'
-        title='Marketing Manager'
+        title='Auxiliar de Marketing'
         description='Auxiliar de Marketing na empresa Elo Marketing, auxiliando na gestão CRM e desenvolvimento de LPs.'>
         </ExperienciaItem>
 
         
         <ExperienciaItem 
         year='2019'
-        title='Dev Front-end Jr'
-        description='Desenvolvedor Front-End Jr na empresa Delivery Brasil, auxiliando no desenvolvimento da interface.'>
+        title='Design e Dev Front-end Jr'
+        description='Desenvolvedor Front-End Jr na empresa Delivery Brasil, auxiliando no desenvolvimento UX/UI do site e transformando em código.'>
         </ExperienciaItem>
 
         
         <ExperienciaItem 
         year='2020'
         title='Analista QA Jr'
-        description='Analista de QA na empresa MedBox, criando testes e resolvendo bugs durante a fase beta do software. '>
+        description='Analista QA na empresa MedBox, criando testes e expondo bugs durante a fase beta do software. '>
         </ExperienciaItem>
 
         
