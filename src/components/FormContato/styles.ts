@@ -7,7 +7,8 @@ export const FormContainer = styled.form`
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.7rem;
+  gap: 0.5rem;
+  margin-top:4rem;
 
 
     button {
@@ -76,7 +77,6 @@ export const TextArea = styled.textarea`
   outline: none;
   transition: 0.5s;
   resize: none;
-  margin-bottom: 0.5rem;
   &:focus {
     border-color: ${({ theme }) => theme.primary};
   }

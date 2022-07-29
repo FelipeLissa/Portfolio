@@ -1,17 +1,11 @@
 import { useEffect } from "react";
-import { Conhecimentos } from "../components/Conhecimentos";
-import { Experiencias } from "../components/Experiencias";
 import "aos/dist/aos.css"
-import { Footer } from "../components/Footer";
-import { FormContato } from "../components/FormContato";
-import { Header } from "../components/Header";
-import { HomeHero } from "../components/HomeHero";
-import { Projetos } from "../components/ProjetosHome";
-import { HomeContainer } from '../styles/HomeStyles'
 import Aos from "aos";
 import Head from "next/head"
+import { HomeContainer } from "../styles/HomeStyles";
 
 
+import {Header, Footer,HomeHero,Projetos,Conhecimentos,Experiencias } from "../components/AllComponents";
 
 
 export default function Home() {
@@ -25,7 +19,7 @@ export default function Home() {
 
         <meta
           name="description"
-          content="Desenvolvedor Front-End especializado em React Next"
+          content="Desenvolvedor Front-End especializado em Next"
         />
         <meta property="og:image" content="/ogimage.png" />
         <meta property="og:image:secure_url" content="/ogimage.png" />
@@ -33,7 +27,7 @@ export default function Home() {
         <meta name="twitter:image:src" content="/ogimage.png" />
         <meta
           property="og:description"
-          content="Sou um desenvolvedor Front-end e aqui apresento alguns projetos desenvolvidos por mim!"
+          content="Sou um desenvolvedor Front-end e aqui apresento alguns projetos e habilidades"
         />
 </Head>
 

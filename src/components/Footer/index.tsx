@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import { AiOutlineInstagram, AiOutlineGithub, AiFillLinkedin, AiOutlineLinkedin } from 'react-icons/ai';
+import { AiOutlineInstagram, AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
 
 
 

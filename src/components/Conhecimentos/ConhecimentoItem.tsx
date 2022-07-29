@@ -1,7 +1,6 @@
 
 import {ConhecimentoContainer} from './styles'
 import {ReactNode} from 'react'
-import {useInView} from 'react-intersection-observer'
 
 interface ConhecimentoProps {
     title:string;

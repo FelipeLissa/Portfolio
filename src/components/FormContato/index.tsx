@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import SectionContato from '../SectionContato';
 import Form from './Form';
 import { Container } from './styles';
