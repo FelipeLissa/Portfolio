@@ -13,7 +13,7 @@ export function Experiencias() {
         <ExperienciaItem 
         year='2019'
         title='Auxiliar de Marketing'
-        description='Auxiliar de Marketing na empresa Elo Marketing, auxiliando na gestão CRM e desenvolvimento de LPs.'>
+        description='Auxiliar de Marketing na empresa Elo Marketing, auxiliando no desenvolvimento de LPs e automação de processos.'>
         </ExperienciaItem>
 
         

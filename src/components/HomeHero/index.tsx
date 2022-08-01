@@ -21,7 +21,7 @@ export function HomeHero() {
               Nome: <span className='blue'>Felipe Lissa</span>
             </div>
             <div>
-              idade: <span className='blue'>24 anos</span>
+              Idade: <span className='blue'>24 anos</span>
             </div>
             <div>
               Residência: <span className='blue'>Florianópolis/SC</span>
