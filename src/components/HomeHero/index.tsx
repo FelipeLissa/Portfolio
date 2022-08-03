@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import { Container, TextContainer, InfosContainer, CodeItem} from './styles';
 import picture from '../../assets/perfil.png'
 

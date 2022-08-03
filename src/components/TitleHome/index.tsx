@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-import { Container } from './styles';
+import { ContainerTitle } from './styles';
 
 interface SectionTitleProps {
   children: [];
@@ -10,10 +10,10 @@ interface SectionTitleProps {
 
 function SectionTitle({ title, description }: SectionTitleProps) {
   return (
-    <Container>
+    <ContainerTitle>
       <h1>#{title}</h1>
       {description && <h2>{description}</h2>}
-    </Container>
+    </ContainerTitle>
   );
 }
 

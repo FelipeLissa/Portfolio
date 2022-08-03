@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import SectionTitle from '../SectionTitle';
+import SectionTitle from '../TitleHome';
 import ProjetosHome from './ProjetosHome';
 import { Container } from './styles';
 

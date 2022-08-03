@@ -28,6 +28,10 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
   height: 25rem;
   align-items: flex-end;
   position: relative;
+
+
+
+
   &:hover {
     > section {
       > div.text {
@@ -41,6 +45,9 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
       color: ${({ theme }) => theme.primary};
     }
   }
+
+
+  
   > button {
     height: 4rem;
     margin: 0 0 3rem 5rem;

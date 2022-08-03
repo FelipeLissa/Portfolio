@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import SectionTitle from '../SectionTitle'
+import SectionTitle from '../TitleHome'
 import { AiFillHtml5 } from 'react-icons/ai';
 import { SiAuth0 ,SiCss3,SiReact, SiAdobephotoshop, SiAdobexd, SiAdobepremierepro, SiJavascript, SiNextdotjs, SiStyledcomponents } from 'react-icons/si';
 import ConhecimentoItem from './ConhecimentoItem';

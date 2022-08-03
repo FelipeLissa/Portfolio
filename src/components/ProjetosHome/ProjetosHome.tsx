@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { AiOutlineRightCircle } from 'react-icons/ai';
 import { ProjetoContainer } from './styles';
 
@@ -9,7 +8,7 @@ interface ProjetosHomeProps {
   img: string;
 }
 
-export default function ProjetosHome({ title, type, slug, img }: ProjetosHomeProps) {
+export default function ProjetosHome({ title, type, slug, img }:ProjetosHomeProps ) {
   return (
     <ProjetoContainer imgUrl={img} data-aos="fade-up">
       <section>

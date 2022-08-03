@@ -1,10 +1,13 @@
+import Aos from "aos"
 import Head from "next/head"
+import { useEffect } from "react"
 import { Footer } from "../../components/Footer"
 import { FormContato } from "../../components/FormContato"
 import { Header } from "../../components/Header"
 
 
 export default function Projetos () {
+    useEffect(() => {Aos.init({duration: 1000}) },[])
     return (
         <><Head>
             <title> Contato | Felipe Lissa </title>

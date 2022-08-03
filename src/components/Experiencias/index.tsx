@@ -1,4 +1,4 @@
-import SectionTitle from '../SectionTitle';
+import SectionTitle from '../TitleHome';
 import { Container } from './styles';
 import ExperienciaItem from './ExperienciaItem'
 

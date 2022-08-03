@@ -11,6 +11,10 @@ export const Container = styled.section`
     >img {
         width: 24rem;
         flex: 1;
+        transition:1s; 
+    }img:hover { 
+    	transform: scale(1.025); 
+        cursor: pointer;
     }
 
     > div {
@@ -113,6 +117,8 @@ h2 {
     
     &:hover {
         filter: brightness(1.3);
+        transform: scale(1.025);
+        cursor: pointer;
     }
 
     &:last-child{
