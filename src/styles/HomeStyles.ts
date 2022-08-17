@@ -9,5 +9,5 @@ height: 100%
 >main {
 display: flex;
 flex-direction: column;
-gap: 8rem;
+gap: 8vw;
 }`

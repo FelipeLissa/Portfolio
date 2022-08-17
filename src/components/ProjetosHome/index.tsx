@@ -12,7 +12,7 @@ export function Projetos() {
       <section>
           <ProjetosHome
           img='/projetobasicfliximg.png'
-          title="Projeto BasicFlix"
+          title="Projeto Api Externa"
           type='Api Externa'
           slug='https://basicflix.vercel.app/'></ProjetosHome>
           
@@ -23,10 +23,10 @@ export function Projetos() {
           slug='https://autenticador-next-auth0.vercel.app'></ProjetosHome>
           
           <ProjetosHome
-          img='/projetoimg.png'
-          title='Em Breve'
-          type='Em Breve'
-          slug='#'></ProjetosHome>
+          img='/projetotratamentodocancerimg.png'
+          title='Projeto Api Rest'
+          type='API Rest'
+          slug='https://tratamentodocancer.vercel.app/'></ProjetosHome>
       </section>
     </Container>
   );

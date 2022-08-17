@@ -1,6 +1,5 @@
 import { lighten } from 'polished';
 import styled from 'styled-components';
-import theme from '../../styles/theme';
 
 interface NavLinkProps {
     isActive: boolean

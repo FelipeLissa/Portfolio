@@ -9,11 +9,11 @@ export const FormContainer = styled.form`
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.5rem;
-  margin-top:4rem;
+  margin-top:4vw;
 
 
     button {
-    margin:0rem 6rem 0rem 6rem;
+    margin:0vw 6vw 0vw 6vw;
     border: none;
     padding: 1rem 2.5rem;
     color: white;
@@ -31,7 +31,7 @@ export const FormContainer = styled.form`
     }
   }
   @media (max-width: 700px) {
-    margin-top: 5rem;
+    margin-top: 5vw;
   }
   @media (max-width: 450px) {
     > button {
@@ -43,7 +43,7 @@ export const FormContainer = styled.form`
 
 export const Input = styled.input`
   height: 3rem;  
-  margin:0rem 6rem 0rem 6rem;
+  margin:0vw 6vw 0vw 6vw;
   background: ${({ theme }) => theme.inputBackground};
   border: 1px solid ${({ theme }) => theme.border};
   padding: 1.7rem 1.5rem;
@@ -68,7 +68,7 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
   height: 10rem;
-  margin:0rem 6rem 0rem 6rem;
+  margin:0vw 6vw 0vw 6vw;
   background: ${({ theme }) => theme.inputBackground};
   border: 1px solid ${({ theme }) => theme.border};
   padding: 1.7rem 1.5rem;

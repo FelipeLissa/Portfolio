@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export const Container = styled.section`
     width: 100%;
     display: flex;
-    gap: 2rem;
+    gap: 2vw;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 3vw;
 
     >img {
         width: 24rem;
@@ -38,7 +38,7 @@ export const Container = styled.section`
     @media(max-width:700px) {
         flex-direction: column-reverse;
         >img {
-            visibility: hidden;
+            height: 1vw;
         }
     }
 
@@ -47,8 +47,8 @@ export const Container = styled.section`
 
 
 export const TextContainer = styled.section `
-margin-top: 5rem;
-margin-bottom:3rem;
+margin-top: 5vw;
+margin-bottom:3vw;
 width:100%;
 
 h1{
@@ -106,21 +106,13 @@ h2 {
     align-self:flex-start;
     transition: 1s;
 
-    @media (max-width:1450px) {
-        width: 18rem;
-        padding: 1.5rem;
-        font-size:0.8rem
-    }
-    @media (max-width:1000px) {
-        width: 18rem;
-    }
     
     &:hover {
         filter: brightness(1.3);
         transform: scale(1.025);
         cursor: pointer;
     }
-
+    
     &:last-child{
         align-self: flex-end;
     }
@@ -128,7 +120,7 @@ h2 {
     >div {
         margin: 0.2rem 0;
         margin-left: 1rem;
-
+        
     }
     
     span.purple {
@@ -138,11 +130,22 @@ h2 {
     span.blue {
         color:#7ac7e3;
     }
-
+    
     span.comment {
         color: ${({theme}) => theme.text};
         margin-bottom: 1rem;
         display: block;
     }
     
+    @media (max-width:1450px) {
+        width: 18rem;
+        padding: 1.5rem;
+        font-size:0.8rem
+    }
+    @media (max-width:1000px) {
+        width: 18rem;
+        &:last-child{
+        align-self: center;
+    }
+    }
     `

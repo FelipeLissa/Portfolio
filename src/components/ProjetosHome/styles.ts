@@ -9,28 +9,24 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5rem;
+  gap: 5vw;
   > section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 4vw;
     @media (max-width: 1000px) {
-      gap: 2rem;
+      gap: 2vw;
     }
   }
-  
 `;
 
 export const ProjetoContainer = styled.div<ProjetoProps>`
   width: 100%;
   display: flex;
-  height: 25rem;
+  height: 25vw;
   align-items: flex-end;
   position: relative;
-
-
-
 
   &:hover {
     > section {
@@ -46,8 +42,6 @@ export const ProjetoContainer = styled.div<ProjetoProps>`
     }
   }
 
-
-  
   > button {
     height: 4rem;
     margin: 0 0 3rem 5rem;

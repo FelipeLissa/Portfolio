@@ -4,20 +4,20 @@ export const Container = styled.div`
     display:inline-block;
     flex-direction: center;
     align-items: center;
-    gap: 0.5rem;
-    margin-top: 5rem;
-    margin-left: 6rem;
+    gap: 0.5vw;
+    margin-top: 5vw;
+    margin-left: 6vw;
 
 
     h1 {
         color: ${({theme}) => theme.primary};
-        font-size: 4.5rem;
+        font-size: 4.5vw;
     }
 
     h2 {
         color: ${({theme}) => theme.secondary};
         font-weight: 300;
-        font-size: 3.5rem;
+        font-size: 3.5vw;
     }
 
     @media (max-width: 1000px) {
