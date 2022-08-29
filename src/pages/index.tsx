@@ -3,8 +3,6 @@ import "aos/dist/aos.css"
 import Aos from "aos";
 import Head from "next/head"
 import { HomeContainer } from "../styles/HomeStyles";
-
-
 import {Header, Footer,HomeHero,Projetos,Conhecimentos,Experiencias } from "../components/AllComponents";
 
 

@@ -12,8 +12,8 @@ export function Experiencias() {
       <section>
         <ExperienciaItem 
         year='2019'
-        title='Auxiliar de Marketing'
-        description='Auxiliar de Marketing na empresa Elo Marketing, auxiliando no desenvolvimento de LPs e automação de processos.'>
+        title='Gestor de Marketing Jr'
+        description='Gestor de Marketing Jr na empresa Elo Marketing, auxiliando no desenvolvimento de LPs, automatizando de mídia sociais, e desenvolvendo campanhas no Facebook ads.'>
         </ExperienciaItem>
 
         
