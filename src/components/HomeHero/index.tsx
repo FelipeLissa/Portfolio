@@ -37,7 +37,7 @@ export function HomeHero() {
               Formação: <span className='blue'>Faculdade CESUSC</span>
             </div>
             <div>
-              Carreira: <span className='blue'>Freelancer</span>
+              Carreira atual: <span className='blue'>Freelancer</span>
             </div>
             {'\u007D'}
           </CodeItem>
