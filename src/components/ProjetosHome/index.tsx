@@ -1,5 +1,3 @@
-
-import Link from 'next/link';
 import SectionTitle from '../TitleHome';
 import ProjetosHome from './ProjetosHome';
 import { Container } from './styles';
@@ -23,10 +21,10 @@ export function Projetos() {
           slug='https://autenticador-next-auth0.vercel.app'></ProjetosHome>
           
           <ProjetosHome
-          img='/projetotratamentodocancerimg.png'
+          img='/projetoimg1.png'
           title='Projeto Api Rest'
           type='API Rest'
-          slug='https://tratamentodocancer.vercel.app/'></ProjetosHome>
+          slug='https://ui-website-felipelissa.vercel.app/'></ProjetosHome>
       </section>
     </Container>
   );
