@@ -1,11 +1,11 @@
 import { Container, TextContainer, InfosContainer, CodeItem} from './styles';
 import picture from '../../assets/perfil.png'
-
 export function HomeHero() {
   return (
     <Container data-aos="fade-up-right">
-     <img src={picture} alt='foto de perfil' />
-
+      <div className='thumbnail'>
+     <img className='thumbnail' src={picture} alt='foto de perfil' />
+     </div>
 
      <div>
       <TextContainer>

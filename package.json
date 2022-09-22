@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "slicemachine": "start-slicemachine"
+    "start": "next start"
   },
   "dependencies": {
     "@babel/helper-wrap-function": "^7.18.9",

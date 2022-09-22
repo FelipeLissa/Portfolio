@@ -8,11 +8,11 @@ export const Container = styled.section`
     justify-content: center;
     margin-top: 3vw;
 
-    >img {
+    .thumbnail {
         width: 24rem;
         flex: 1;
-        transition:1s; 
-    }img:hover { 
+        transition: 1s; 
+    }.thumbnail:hover { 
     	transform: scale(1.025); 
         cursor: pointer;
     }
