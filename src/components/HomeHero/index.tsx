@@ -34,7 +34,7 @@ export function HomeHero() {
               Área: <span className='blue'>Front-end & Web-Designer</span>
             </div>
             <div>
-              Formação: <span className='blue'>Faculdade CESUSC</span>
+              Formação: <span className='blue'>Marketing Digital - CESUSC</span>
             </div>
             <div>
               Carreira atual: <span className='blue'>Freelancer</span>
